@@ -1,0 +1,1 @@
+clang++ -std=c++17 -gdwarf-4 -lpthread -Wl,--enable-auto-import "CMakeFiles/rrolf-server.dir/Main.cc.o" -o rrolf-server.exe -Wl,--out-implib,librrolf-server.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

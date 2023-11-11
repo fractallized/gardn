@@ -1,0 +1,1 @@
+em++ -std=c++20 -gdwarf-4 -s EXPORTED_FUNCTIONS=_main,_malloc,_free,_render "CMakeFiles/gardn-client.dir/Game.cc.obj" "CMakeFiles/gardn-client.dir/Main.cc.obj" "CMakeFiles/gardn-client.dir/Renderer.cc.obj" -o gardn-client 
