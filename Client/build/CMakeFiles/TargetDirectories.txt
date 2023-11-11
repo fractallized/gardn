@@ -1,3 +1,0 @@
-/c/gardn/client/build/CMakeFiles/gardn-client.dir
-/c/gardn/client/build/CMakeFiles/edit_cache.dir
-/c/gardn/client/build/CMakeFiles/rebuild_cache.dir
