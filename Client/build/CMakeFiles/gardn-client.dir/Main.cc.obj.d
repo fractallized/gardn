@@ -615,7 +615,14 @@ CMakeFiles/gardn-client.dir/Main.cc.obj: C:\gardn\client\Main.cc \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\emscripten\wget.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\emscripten\version.h \
   C:\gardn\client\..\Client\Game.hh \
-  C:\gardn\client\..\Client\Renderer.hh \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\inttypes.h \
   C:\emsdk\upstream\lib\clang\16.0.0\include\inttypes.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\inttypes.h
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\inttypes.h \
+  C:\gardn\client\..\Client\Renderer.hh \
+  C:\gardn\client\..\Shared\Protocol.hh \
+  C:\gardn\client\..\Shared\Simulation.hh \
+  C:\gardn\client\..\Shared\Component\Arena.hh \
+  C:\gardn\client\..\Shared\Entity.hh \
+  C:\gardn\client\..\Shared\Component\Camera.hh \
+  C:\gardn\client\..\Shared\Utilities.hh \
+  C:\gardn\client\..\Shared\Component\Physical.hh

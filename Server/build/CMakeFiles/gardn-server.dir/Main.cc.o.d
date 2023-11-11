@@ -1,4 +1,4 @@
-CMakeFiles/gardn-server.dir/Main.cc.o: C:/gardn/Server/Main.cc \
+CMakeFiles/gardn-server.dir/Main.cc.o: C:/gardn/server/Main.cc \
   C:/msys64/mingw64/include/stdio.h \
   C:/msys64/mingw64/include/corecrt_stdio_config.h \
   C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
@@ -25,20 +25,24 @@ CMakeFiles/gardn-server.dir/Main.cc.o: C:/gardn/Server/Main.cc \
   C:/msys64/mingw64/lib/clang/16/include/mm_malloc.h \
   C:/msys64/mingw64/include/c++/13.1.0/bits/std_abs.h \
   C:/msys64/mingw64/include/string.h \
-  C:/msys64/mingw64/include/sec_api/string_s.h C:/libuv/include/uv.h \
-  C:/libuv/include/uv/errno.h C:/msys64/mingw64/include/errno.h \
-  C:/libuv/include/uv/version.h \
-  C:/msys64/mingw64/lib/clang/16/include/stddef.h \
-  C:/msys64/mingw64/lib/clang/16/include/__stddef_max_align_t.h \
+  C:/msys64/mingw64/include/sec_api/string_s.h \
+  C:/gardn/server/../Server/Server.hh \
+  C:/msys64/mingw64/lib/clang/16/include/inttypes.h \
+  C:/msys64/mingw64/include/inttypes.h \
   C:/msys64/mingw64/lib/clang/16/include/stdint.h \
-  C:/msys64/mingw64/include/stdint.h C:/libuv/include/uv/win.h \
+  C:/msys64/mingw64/include/stdint.h \
+  C:/msys64/mingw64/lib/clang/16/include/stddef.h \
+  C:/msys64/mingw64/include/libwebsockets.h \
+  C:/msys64/mingw64/include/c++/13.1.0/cstddef \
+  C:/msys64/mingw64/lib/clang/16/include/__stddef_max_align_t.h \
+  C:/msys64/mingw64/include/c++/13.1.0/cstdarg \
+  C:/msys64/mingw64/lib/clang/16/include/stdarg.h \
+  C:/msys64/mingw64/include/lws_config.h \
   C:/msys64/mingw64/include/winsock2.h \
   C:/msys64/mingw64/include/_mingw_unicode.h \
   C:/msys64/mingw64/include/windows.h \
   C:/msys64/mingw64/include/sdkddkver.h \
-  C:/msys64/mingw64/include/excpt.h \
-  C:/msys64/mingw64/lib/clang/16/include/stdarg.h \
-  C:/msys64/mingw64/include/windef.h \
+  C:/msys64/mingw64/include/excpt.h C:/msys64/mingw64/include/windef.h \
   C:/msys64/mingw64/include/winapifamily.h \
   C:/msys64/mingw64/include/minwindef.h \
   C:/msys64/mingw64/include/specstrings.h \
@@ -198,46 +202,7 @@ CMakeFiles/gardn-server.dir/Main.cc.o: C:/gardn/Server/Main.cc \
   C:/msys64/mingw64/include/wincon.h C:/msys64/mingw64/include/winver.h \
   C:/msys64/mingw64/include/winreg.h C:/msys64/mingw64/include/reason.h \
   C:/msys64/mingw64/include/winnetwk.h C:/msys64/mingw64/include/wnnc.h \
-  C:/msys64/mingw64/include/virtdisk.h C:/msys64/mingw64/include/cderr.h \
-  C:/msys64/mingw64/include/dde.h C:/msys64/mingw64/include/ddeml.h \
-  C:/msys64/mingw64/include/dlgs.h C:/msys64/mingw64/include/lzexpand.h \
-  C:/msys64/mingw64/include/mmsystem.h \
-  C:/msys64/mingw64/include/mmsyscom.h \
-  C:/msys64/mingw64/include/mciapi.h \
-  C:/msys64/mingw64/include/mmiscapi.h \
-  C:/msys64/mingw64/include/mmiscapi2.h \
-  C:/msys64/mingw64/include/playsoundapi.h \
-  C:/msys64/mingw64/include/mmeapi.h C:/msys64/mingw64/include/timeapi.h \
-  C:/msys64/mingw64/include/joystickapi.h \
-  C:/msys64/mingw64/include/nb30.h C:/msys64/mingw64/include/rpc.h \
-  C:/msys64/mingw64/include/rpcdce.h C:/msys64/mingw64/include/rpcdcep.h \
-  C:/msys64/mingw64/include/rpcnsi.h \
-  C:/msys64/mingw64/include/rpcnterr.h \
-  C:/msys64/mingw64/include/rpcasync.h \
-  C:/msys64/mingw64/include/shellapi.h \
-  C:/msys64/mingw64/include/winperf.h \
-  C:/msys64/mingw64/include/winsock.h \
-  C:/msys64/mingw64/include/wincrypt.h \
-  C:/msys64/mingw64/include/bcrypt.h C:/msys64/mingw64/include/ncrypt.h \
-  C:/msys64/mingw64/include/dpapi.h C:/msys64/mingw64/include/winefs.h \
-  C:/msys64/mingw64/include/winscard.h \
-  C:/msys64/mingw64/include/wtypes.h C:/msys64/mingw64/include/rpcndr.h \
-  C:/msys64/mingw64/include/rpcnsip.h C:/msys64/mingw64/include/rpcsal.h \
-  C:/msys64/mingw64/include/ole2.h C:/msys64/mingw64/include/objbase.h \
-  C:/msys64/mingw64/include/combaseapi.h \
-  C:/msys64/mingw64/include/wtypesbase.h \
-  C:/msys64/mingw64/include/unknwnbase.h \
-  C:/msys64/mingw64/include/objidlbase.h \
-  C:/msys64/mingw64/include/cguid.h C:/msys64/mingw64/include/objidl.h \
-  C:/msys64/mingw64/include/unknwn.h C:/msys64/mingw64/include/urlmon.h \
-  C:/msys64/mingw64/include/oleidl.h \
-  C:/msys64/mingw64/include/servprov.h C:/msys64/mingw64/include/msxml.h \
-  C:/msys64/mingw64/include/oaidl.h C:/msys64/mingw64/include/propidl.h \
-  C:/msys64/mingw64/include/oleauto.h \
-  C:/msys64/mingw64/include/winioctl.h \
-  C:/msys64/mingw64/include/winsmcrd.h \
-  C:/msys64/mingw64/include/winspool.h C:/msys64/mingw64/include/prsht.h \
-  C:/msys64/mingw64/include/commdlg.h \
+  C:/msys64/mingw64/include/virtdisk.h \
   C:/msys64/mingw64/include/stralign.h \
   C:/msys64/mingw64/include/sec_api/stralign_s.h \
   C:/msys64/mingw64/include/winsvc.h C:/msys64/mingw64/include/mcx.h \
@@ -252,19 +217,165 @@ CMakeFiles/gardn-server.dir/Main.cc.o: C:/gardn/Server/Main.cc \
   C:/msys64/mingw64/include/psdk_inc/_wsadata.h \
   C:/msys64/mingw64/include/ws2def.h \
   C:/msys64/mingw64/include/psdk_inc/_wsa_errnos.h \
-  C:/msys64/mingw64/include/qos.h C:/msys64/mingw64/include/mswsock.h \
-  C:/msys64/mingw64/include/psdk_inc/_xmitfile.h \
-  C:/msys64/mingw64/include/ws2tcpip.h \
+  C:/msys64/mingw64/include/qos.h C:/msys64/mingw64/include/ws2tcpip.h \
   C:/msys64/mingw64/include/ws2ipdef.h \
   C:/msys64/mingw64/include/in6addr.h \
   C:/msys64/mingw64/include/psdk_inc/_ip_mreq1.h \
-  C:/msys64/mingw64/include/mstcpip.h \
-  C:/msys64/mingw64/include/process.h \
-  C:/msys64/mingw64/include/corecrt_startup.h \
+  C:/msys64/mingw64/include/mstcpip.h C:/msys64/mingw64/include/io.h \
+  C:/msys64/mingw64/include/fcntl.h \
+  C:/msys64/mingw64/include/openssl/ssl.h \
+  C:/msys64/mingw64/include/openssl/macros.h \
+  C:/msys64/mingw64/include/openssl/opensslconf.h \
+  C:/msys64/mingw64/include/openssl/configuration.h \
+  C:/msys64/mingw64/include/openssl/opensslv.h \
+  C:/msys64/mingw64/include/openssl/e_os2.h \
+  C:/msys64/mingw64/include/openssl/comp.h \
+  C:/msys64/mingw64/include/openssl/crypto.h \
+  C:/msys64/mingw64/include/time.h C:/msys64/mingw64/include/sys/timeb.h \
+  C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
+  C:/msys64/mingw64/include/pthread_time.h \
+  C:/msys64/mingw64/include/openssl/safestack.h \
+  C:/msys64/mingw64/include/openssl/stack.h \
+  C:/msys64/mingw64/include/openssl/types.h \
+  C:/msys64/mingw64/include/openssl/cryptoerr.h \
+  C:/msys64/mingw64/include/openssl/symhacks.h \
+  C:/msys64/mingw64/include/openssl/cryptoerr_legacy.h \
+  C:/msys64/mingw64/include/openssl/core.h \
+  C:/msys64/mingw64/include/openssl/comperr.h \
+  C:/msys64/mingw64/include/openssl/bio.h \
+  C:/msys64/mingw64/include/openssl/bioerr.h \
+  C:/msys64/mingw64/include/openssl/x509.h \
+  C:/msys64/mingw64/include/openssl/buffer.h \
+  C:/msys64/mingw64/include/openssl/buffererr.h \
   C:/msys64/mingw64/include/sys/types.h \
-  C:/msys64/mingw64/include/signal.h \
-  C:/msys64/mingw64/include/pthread_signal.h \
-  C:/msys64/mingw64/include/fcntl.h C:/msys64/mingw64/include/io.h \
-  C:/msys64/mingw64/include/sys/stat.h \
-  C:/msys64/mingw64/include/_mingw_stat64.h C:/libuv/include/uv/tree.h \
-  C:/libuv/include/uv/threadpool.h
+  C:/msys64/mingw64/include/openssl/evp.h \
+  C:/msys64/mingw64/include/openssl/core_dispatch.h \
+  C:/msys64/mingw64/include/openssl/evperr.h \
+  C:/msys64/mingw64/include/openssl/params.h \
+  C:/msys64/mingw64/include/openssl/bn.h \
+  C:/msys64/mingw64/include/openssl/bnerr.h \
+  C:/msys64/mingw64/include/openssl/objects.h \
+  C:/msys64/mingw64/include/openssl/obj_mac.h \
+  C:/msys64/mingw64/include/openssl/asn1.h \
+  C:/msys64/mingw64/include/openssl/asn1err.h \
+  C:/msys64/mingw64/include/openssl/objectserr.h \
+  C:/msys64/mingw64/include/openssl/ec.h \
+  C:/msys64/mingw64/include/openssl/ecerr.h \
+  C:/msys64/mingw64/include/openssl/rsa.h \
+  C:/msys64/mingw64/include/openssl/rsaerr.h \
+  C:/msys64/mingw64/include/openssl/dsa.h \
+  C:/msys64/mingw64/include/openssl/dh.h \
+  C:/msys64/mingw64/include/openssl/dherr.h \
+  C:/msys64/mingw64/include/openssl/dsaerr.h \
+  C:/msys64/mingw64/include/openssl/sha.h \
+  C:/msys64/mingw64/include/openssl/x509err.h \
+  C:/msys64/mingw64/include/openssl/x509_vfy.h \
+  C:/msys64/mingw64/include/openssl/lhash.h \
+  C:/msys64/mingw64/include/openssl/pkcs7.h \
+  C:/msys64/mingw64/include/openssl/pkcs7err.h \
+  C:/msys64/mingw64/include/openssl/http.h \
+  C:/msys64/mingw64/include/openssl/conf.h \
+  C:/msys64/mingw64/include/openssl/conferr.h \
+  C:/msys64/mingw64/include/openssl/conftypes.h \
+  C:/msys64/mingw64/include/openssl/pem.h \
+  C:/msys64/mingw64/include/openssl/pemerr.h \
+  C:/msys64/mingw64/include/openssl/hmac.h \
+  C:/msys64/mingw64/include/openssl/async.h \
+  C:/msys64/mingw64/include/openssl/asyncerr.h \
+  C:/msys64/mingw64/include/openssl/ct.h \
+  C:/msys64/mingw64/include/openssl/cterr.h \
+  C:/msys64/mingw64/include/openssl/sslerr.h \
+  C:/msys64/mingw64/include/openssl/sslerr_legacy.h \
+  C:/msys64/mingw64/include/openssl/prov_ssl.h \
+  C:/msys64/mingw64/include/openssl/ssl2.h \
+  C:/msys64/mingw64/include/openssl/ssl3.h \
+  C:/msys64/mingw64/include/openssl/tls1.h \
+  C:/msys64/mingw64/include/openssl/dtls1.h \
+  C:/msys64/mingw64/include/openssl/srtp.h \
+  C:/msys64/mingw64/include/openssl/err.h \
+  C:/msys64/mingw64/include/errno.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-logs.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-dll2.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-map.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-fault-injection.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-timeout-timer.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-cache-ttl.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-state.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-retry.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-adopt.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-network-helper.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-metrics.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-system.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-ws-close.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-callbacks.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-ws-state.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-ws-ext.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-protocols-plugins.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-context-vhost.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-conmon.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-client.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-http.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-spa.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-purify.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-misc.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-dsh.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-service.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-write.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-writeable.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-ring.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-sha1-base64.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-x509.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-cgi.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-vfs.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-gencrypto.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-lejp.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-lecp.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-cose.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-struct.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-threadpool.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-tokenize.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-lwsac.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-fts.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-diskcache.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-sequencer.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-secure-streams.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-secure-streams-policy.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-secure-streams-client.h \
+  C:/msys64/mingw64/include/libwebsockets/abstract/abstract.h \
+  C:/msys64/mingw64/include/libwebsockets/abstract/protocols.h \
+  C:/msys64/mingw64/include/libwebsockets/abstract/protocols/smtp.h \
+  C:/msys64/mingw64/include/libwebsockets/abstract/transports.h \
+  C:/msys64/mingw64/include/libwebsockets/abstract/transports/raw-skt.h \
+  C:/msys64/mingw64/include/libwebsockets/abstract/transports/unit-test.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-test-sequencer.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-async-dns.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-tls-sessions.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-genhash.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-genrsa.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-genaes.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-genec.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-jwk.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-jose.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-jws.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-jwe.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-eventlib-exports.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-i2c.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-spi.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-gpio.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-bb-i2c.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-bb-spi.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-button.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-led.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-pwm.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-display.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-ssd1306-i2c.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-ili9341-spi.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-settings.h \
+  C:/msys64/mingw64/include/libwebsockets/lws-netdev.h \
+  C:/gardn/server/../Shared/Simulation.hh \
+  C:/gardn/server/../Shared/Component/Arena.hh \
+  C:/gardn/server/../Shared/Entity.hh \
+  C:/gardn/server/../Shared/Protocol.hh \
+  C:/gardn/server/../Shared/Component/Camera.hh \
+  C:/gardn/server/../Shared/Utilities.hh \
+  C:/gardn/server/../Shared/Component/Physical.hh

@@ -111,11 +111,56 @@ CMakeFiles/gardn-client.dir/Renderer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gardn-client.dir/Renderer.cc.s"
 	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /c/gardn/client/Renderer.cc -o CMakeFiles/gardn-client.dir/Renderer.cc.s
 
+CMakeFiles/gardn-client.dir/Simulation.cc.obj: CMakeFiles/gardn-client.dir/flags.make
+CMakeFiles/gardn-client.dir/Simulation.cc.obj: /c/gardn/client/Simulation.cc
+CMakeFiles/gardn-client.dir/Simulation.cc.obj: CMakeFiles/gardn-client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/c/gardn/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gardn-client.dir/Simulation.cc.obj"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gardn-client.dir/Simulation.cc.obj -MF CMakeFiles/gardn-client.dir/Simulation.cc.obj.d -o CMakeFiles/gardn-client.dir/Simulation.cc.obj -c /c/gardn/client/Simulation.cc
+
+CMakeFiles/gardn-client.dir/Simulation.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gardn-client.dir/Simulation.cc.i"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /c/gardn/client/Simulation.cc > CMakeFiles/gardn-client.dir/Simulation.cc.i
+
+CMakeFiles/gardn-client.dir/Simulation.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gardn-client.dir/Simulation.cc.s"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /c/gardn/client/Simulation.cc -o CMakeFiles/gardn-client.dir/Simulation.cc.s
+
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj: CMakeFiles/gardn-client.dir/flags.make
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj: /c/gardn/Shared/Simulation.cc
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj: CMakeFiles/gardn-client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/c/gardn/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj -MF CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj.d -o CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj -c /c/gardn/Shared/Simulation.cc
+
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.i"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /c/gardn/Shared/Simulation.cc > CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.i
+
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.s"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /c/gardn/Shared/Simulation.cc -o CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.s
+
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj: CMakeFiles/gardn-client.dir/flags.make
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj: /c/gardn/Shared/Utilities.cc
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj: CMakeFiles/gardn-client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/c/gardn/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj -MF CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj.d -o CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj -c /c/gardn/Shared/Utilities.cc
+
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.i"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /c/gardn/Shared/Utilities.cc > CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.i
+
+CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.s"
+	em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /c/gardn/Shared/Utilities.cc -o CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.s
+
 # Object files for target gardn-client
 gardn__client_OBJECTS = \
 "CMakeFiles/gardn-client.dir/Game.cc.obj" \
 "CMakeFiles/gardn-client.dir/Main.cc.obj" \
-"CMakeFiles/gardn-client.dir/Renderer.cc.obj"
+"CMakeFiles/gardn-client.dir/Renderer.cc.obj" \
+"CMakeFiles/gardn-client.dir/Simulation.cc.obj" \
+"CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj" \
+"CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj"
 
 # External object files for target gardn-client
 gardn__client_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ gardn__client_EXTERNAL_OBJECTS =
 gardn-client: CMakeFiles/gardn-client.dir/Game.cc.obj
 gardn-client: CMakeFiles/gardn-client.dir/Main.cc.obj
 gardn-client: CMakeFiles/gardn-client.dir/Renderer.cc.obj
+gardn-client: CMakeFiles/gardn-client.dir/Simulation.cc.obj
+gardn-client: CMakeFiles/gardn-client.dir/c/gardn/Shared/Simulation.cc.obj
+gardn-client: CMakeFiles/gardn-client.dir/c/gardn/Shared/Utilities.cc.obj
 gardn-client: CMakeFiles/gardn-client.dir/build.make
 gardn-client: CMakeFiles/gardn-client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/c/gardn/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable gardn-client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/c/gardn/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable gardn-client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gardn-client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,13 +1,16 @@
 #pragma once
 
-#include <Renderer.hh>
-
 #include <inttypes.h>
+
+#include <Renderer.hh>
+#include <Shared/Protocol.hh>
+#include <Shared/Simulation.hh>
 
 namespace gardn {
     class Game {
     public:
-        uint32_t test;
+        simulation::Simulation simulation;
+        float delta;
         Game();
         void Tick(float);
     };

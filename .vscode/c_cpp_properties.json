@@ -4,7 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${default}",
-                "${workspaceFolder}/Client"
+                "${workspaceFolder}/Server",
+                "${workspaceFolder}/Client",
+                "${workspaceFolder}"
             ],
             "defines": [
                 "_DEBUG",

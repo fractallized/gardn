@@ -54,10 +54,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /c/gardn/Server
+CMAKE_SOURCE_DIR = /c/gardn/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /c/gardn/Server/build
+CMAKE_BINARY_DIR = /c/gardn/server/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/gardn-server.dir/clean
 CMakeFiles/gardn-server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gardn-server.dir/build.make CMakeFiles/gardn-server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gardn-server.dir/build.make CMakeFiles/gardn-server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/c/gardn/Server/build/CMakeFiles --progress-num=1,2 "Built target gardn-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/c/gardn/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target gardn-server"
 .PHONY : CMakeFiles/gardn-server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gardn-server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /c/gardn/Server/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /c/gardn/server/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gardn-server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /c/gardn/Server/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /c/gardn/server/build/CMakeFiles 0
 .PHONY : CMakeFiles/gardn-server.dir/rule
 
 # Convenience name for target.

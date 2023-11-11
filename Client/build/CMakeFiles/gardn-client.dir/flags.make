@@ -4,7 +4,7 @@
 # compile CXX with em++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/c/gardn/client/../Client
+CXX_INCLUDES = -I/c/gardn/client/../Client -I/c/gardn/client/..
 
-CXX_FLAGS = -std=c++20 -gdwarf-4 -s EXPORTED_FUNCTIONS=_main,_malloc,_free,_render
+CXX_FLAGS = -std=c++20 -DCLIENT=1 -gdwarf-4 -s EXPORTED_FUNCTIONS=_main,_malloc,_free,_render
 

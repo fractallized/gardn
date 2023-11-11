@@ -4,7 +4,7 @@
 # compile CXX with clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/c/gardn/Server/.. -I/c/libuv/include
+CXX_INCLUDES = -I/c/gardn/server/..
 
-CXX_FLAGS = -std=c++17 -gdwarf-4 -lpthread
+CXX_FLAGS = -std=c++17 -gdwarf-4 -lpthread -DSERVER_SIDE=1
 

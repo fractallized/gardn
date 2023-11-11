@@ -1,4 +1,4 @@
-# Install script for directory: /c/gardn/Server
+# Install script for directory: /c/gardn/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/c/gardn/Server/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/c/gardn/server/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

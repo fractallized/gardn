@@ -1214,13 +1214,29 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  1208: () => { Module.canvas = document.createElement("canvas"); Module.canvas.id = "canvas"; Module.canvas.oncontextmenu = function() { return false; }; window.onbeforeunload = function(e) { return "Are you sure?"; }; document.body.appendChild(Module.canvas); Module.ctxs = [Module.canvas.getContext('2d')]; Module.availableCtxs = new Array(256).fill(0).map(function(_, i) { return i; }); Module.addCtx = function() { if (Module.availableCtxs.length) { const index = Module.availableCtxs.shift(); if (index == 0) return 0; const ocanvas = new OffscreenCanvas(1, 1); Module.ctxs[index] = ocanvas.getContext('2d'); return index; } throw new Error( 'Out of Contexts: Can be fixed by allowing more contexts'); return -1; }; Module.removeCtx = function(index) { if (index == 0) throw new Error('Tried to delete the main context'); Module.ctxs[index] = null; Module.availableCtxs.push(index); }; },  
- 2088: () => { window.onkeydown = function(e) { }; window.onkeyup = function(e) { }; window.addEventListener("mousedown", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mousemove", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mouseup", async function(e){ const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("touchstart", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchmove", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchend", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("wheel", async function({deltaY}) { }); document.body.addEventListener("paste", async function(e) { const buf = new TextEncoder().encode(e.clipboardData.getData("text/plain")); const $a = _malloc(buf.length + 1); HEAPU8.set(buf, $a); HEAPU8[$a + buf.length] = 0; }); function loop(time) { if (window.start == null) window.start = time + 1; const delta = Math.min(0.5, (time - window.start) / 1000); window.start = time; _render(Module.canvas.width = innerWidth * devicePixelRatio, Module.canvas.height = innerHeight * devicePixelRatio, delta); requestAnimationFrame(loop); }; requestAnimationFrame(loop); },  
- 3871: () => { return Module.addCtx(); },  
- 3899: ($0, $1, $2) => { const canvas = Module.ctxs[$0].canvas; canvas.width = $1; canvas.height = $2; },  
- 3981: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].clearRect($1, $2, $3, $4); },  
- 4028: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillRect($1, $2, $3, $4); },  
- 4074: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].setTransform($1, $2, $3, $4, $5, $6); }
+  1372: () => { Module.canvas = document.createElement("canvas"); Module.canvas.id = "canvas"; Module.canvas.oncontextmenu = function() { return false; }; window.onbeforeunload = function(e) { return "Are you sure?"; }; document.body.appendChild(Module.canvas); Module.ctxs = [Module.canvas.getContext('2d')]; Module.availableCtxs = new Array(256).fill(0).map(function(_, i) { return i; }); Module.addCtx = function() { if (Module.availableCtxs.length) { const index = Module.availableCtxs.shift(); if (index == 0) return 0; const ocanvas = new OffscreenCanvas(1, 1); Module.ctxs[index] = ocanvas.getContext('2d'); return index; } throw new Error( 'Out of Contexts: Can be fixed by allowing more contexts'); return -1; }; Module.removeCtx = function(index) { if (index == 0) throw new Error('Tried to delete the main context'); Module.ctxs[index] = null; Module.availableCtxs.push(index); }; },  
+ 2252: () => { window.onkeydown = function(e) { }; window.onkeyup = function(e) { }; window.addEventListener("mousedown", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mousemove", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mouseup", async function(e){ const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("touchstart", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchmove", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchend", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("wheel", async function({deltaY}) { }); document.body.addEventListener("paste", async function(e) { const buf = new TextEncoder().encode(e.clipboardData.getData("text/plain")); const $a = _malloc(buf.length + 1); HEAPU8.set(buf, $a); HEAPU8[$a + buf.length] = 0; }); function loop(time) { if (window.start == null) window.start = time + 1; const delta = Math.min(0.5, (time - window.start) / 1000); window.start = time; _render(Module.canvas.width = innerWidth * devicePixelRatio, Module.canvas.height = innerHeight * devicePixelRatio, delta); requestAnimationFrame(loop); }; requestAnimationFrame(loop); },  
+ 4035: () => { return Module.addCtx(); },  
+ 4063: ($0, $1, $2) => { const canvas = Module.ctxs[$0].canvas; canvas.width = $1; canvas.height = $2; },  
+ 4145: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillStyle = "rgba("+$1+","+$2+","+$3+","+$4+")"; },  
+ 4214: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].strokeStyle = "rgba("+$1+","+$2+","+$3+","+$4+")"; },  
+ 4285: ($0, $1) => { Module.ctxs[$0].lineWidth = $1; },  
+ 4321: ($0, $1) => { Module.ctxs[$0].font = $1 + "px Ubuntu"; },  
+ 4366: ($0, $1) => { Module.ctxs[$0].lineJoin = $1 === -1 ? "miter" : $1 === 0 ? "round" : "bevel"; },  
+ 4449: ($0, $1) => { Module.ctxs[$0].lineCap = $1 === -1 ? "butt" : $1 === 0 ? "round" : "square"; },  
+ 4531: ($0, $1) => { Module.ctxs[$0].textAlign = $1 === -1 ? "left" : $1 === 0 ? "center" : "right"; },  
+ 4615: ($0, $1) => { Module.ctxs[$0].textAlign = $1 === -1 ? "top" : $1 === 0 ? "middle" : "bottom"; },  
+ 4699: ($0) => { Module.ctxs[$0].beginPath(); },  
+ 4732: ($0, $1, $2) => { Module.ctxs[$0].moveTo($1, $2); },  
+ 4768: ($0, $1, $2) => { Module.ctxs[$0].lineTo($1, $2); },  
+ 4804: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].quadraticCurveTo($1, $2, $3, $4); },  
+ 4858: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].bezierCurveTo($1, $2, $3, $4, $5, $6); },  
+ 4917: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].arc($1, $2, $3, $4, $5, !!$6); },  
+ 4968: ($0) => { Module.ctxs[$0].fill(); },  
+ 4996: ($0) => { Module.ctxs[$0].stroke(); },  
+ 5026: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].clearRect($1, $2, $3, $4); },  
+ 5073: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillRect($1, $2, $3, $4); },  
+ 5119: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].setTransform($1, $2, $4, $5, $3, $6); }
 };
 
 
@@ -1342,6 +1358,28 @@ var ASM_CONSTS = {
       abortOnCannotGrowMemory(requestedSize);
     }
 
+  var SYSCALLS = {varargs:undefined,get:function() {
+        assert(SYSCALLS.varargs != undefined);
+        SYSCALLS.varargs += 4;
+        var ret = HEAP32[(((SYSCALLS.varargs)-(4))>>2)];
+        return ret;
+      },getStr:function(ptr) {
+        var ret = UTF8ToString(ptr);
+        return ret;
+      }};
+  function _fd_close(fd) {
+      abort('fd_close called without SYSCALLS_REQUIRE_FILESYSTEM');
+    }
+
+  function convertI32PairToI53Checked(lo, hi) {
+      assert(lo == (lo >>> 0) || lo == (lo|0)); // lo should either be a i32 or a u32
+      assert(hi === (hi|0));                    // hi should be a i32
+      return ((hi + 0x200000) >>> 0 < 0x400001 - !!lo) ? (lo >>> 0) + hi * 4294967296 : NaN;
+    }
+  function _fd_seek(fd, offset_low, offset_high, whence, newOffset) {
+      return 70;
+    }
+
   var printCharBuffers = [null,[],[]];
   function printChar(stream, curr) {
       var buffer = printCharBuffers[stream];
@@ -1359,16 +1397,6 @@ var ASM_CONSTS = {
       if (printCharBuffers[1].length) printChar(1, 10);
       if (printCharBuffers[2].length) printChar(2, 10);
     }
-  
-  var SYSCALLS = {varargs:undefined,get:function() {
-        assert(SYSCALLS.varargs != undefined);
-        SYSCALLS.varargs += 4;
-        var ret = HEAP32[(((SYSCALLS.varargs)-(4))>>2)];
-        return ret;
-      },getStr:function(ptr) {
-        var ret = UTF8ToString(ptr);
-        return ret;
-      }};
   function _fd_write(fd, iov, iovcnt, pnum) {
       // hack to support printf in SYSCALLS_REQUIRE_FILESYSTEM=0
       var num = 0;
@@ -1428,6 +1456,8 @@ var asmLibraryArg = {
   "emscripten_asm_const_int": _emscripten_asm_const_int,
   "emscripten_memcpy_big": _emscripten_memcpy_big,
   "emscripten_resize_heap": _emscripten_resize_heap,
+  "fd_close": _fd_close,
+  "fd_seek": _fd_seek,
   "fd_write": _fd_write
 };
 var asm = createWasm();
@@ -1778,7 +1808,6 @@ var missingLibrarySymbols = [
   'readI53FromI64',
   'readI53FromU64',
   'convertI32PairToI53',
-  'convertI32PairToI53Checked',
   'convertU32PairToI53',
   'getCFunc',
   'ccall',

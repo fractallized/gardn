@@ -1,6 +1,5 @@
 CMakeFiles/gardn-client.dir/Game.cc.obj: C:\gardn\client\Game.cc \
   C:\gardn\client\..\Client\Game.hh \
-  C:\gardn\client\..\Client\Renderer.hh \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\inttypes.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__config \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__config_site \
@@ -12,20 +11,35 @@ CMakeFiles/gardn-client.dir/Game.cc.obj: C:\gardn\client\Game.cc \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\stdint.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\bits\alltypes.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\bits\stdint.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\iostream \
+  C:\gardn\client\..\Client\Renderer.hh \
+  C:\gardn\client\..\Shared\Protocol.hh \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\cstddef \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__assert \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__verbose_abort \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__availability \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\enable_if.h \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\integral_constant.h \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_integral.h \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_cv.h \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_const.h \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_volatile.h \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\stddef.h \
+  C:\emsdk\upstream\lib\clang\16.0.0\include\stddef.h \
+  C:\emsdk\upstream\lib\clang\16.0.0\include\__stddef_max_align_t.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\version \
+  C:\gardn\client\..\Shared\Simulation.hh \
+  C:\gardn\client\..\Shared\Component\Arena.hh \
+  C:\gardn\client\..\Shared\Entity.hh \
+  C:\gardn\client\..\Shared\Component\Camera.hh \
+  C:\gardn\client\..\Shared\Utilities.hh \
+  C:\gardn\client\..\Shared\Component\Physical.hh \
+  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\iostream \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\ios \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__ios\fpos.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\iosfwd \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__mbstate_t.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\compat\wchar.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\wchar.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\stddef.h \
-  C:\emsdk\upstream\lib\clang\16.0.0\include\stddef.h \
-  C:\emsdk\upstream\lib\clang\16.0.0\include\__stddef_max_align_t.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\wchar.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__locale \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\cctype \
@@ -41,9 +55,7 @@ CMakeFiles/gardn-client.dir/Game.cc.obj: C:\gardn\client\Game.cc \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__iterator\iterator_traits.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__iterator\incrementable_traits.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_primary_template.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\enable_if.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_same.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\integral_constant.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_valid_expansion.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\concepts \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__concepts\arithmetic.h \
@@ -57,11 +69,6 @@ CMakeFiles/gardn-client.dir/Game.cc.obj: C:\gardn\client\Game.cc \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_const.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_volatile.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_reference.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\cstddef \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\is_integral.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_cv.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_const.h \
-  C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\remove_volatile.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\conditional.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\decay.h \
   C:\emsdk\upstream\emscripten\cache\sysroot\include\c++\v1\__type_traits\add_pointer.h \

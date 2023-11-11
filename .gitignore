@@ -1,0 +1,11 @@
+build/
+node_modules/
+.vscode/
+.vs/
+
+gardn-client
+gardn-client.wasm
+
+### Rivet ###
+.rivet/
+.env
