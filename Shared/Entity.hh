@@ -11,4 +11,5 @@ typedef uint32_t EntityHash;
 #define PERCOMPONENT \
     X(Physical, 1)   \
     X(Arena, 2)      \
-    X(Camera, 3)
+    X(Camera, 3)     \
+    X(Flower, 4)

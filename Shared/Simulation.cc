@@ -13,5 +13,6 @@ void Simulation::Free(EntityIdx entity) {
 }
 
 void Simulation::Unset(EntityIdx entity) {
+    printf("unset %d\n", entity);
     EntityTracker[entity] = 0;
 }

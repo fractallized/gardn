@@ -10,12 +10,13 @@ namespace simulation {
         EntityIdx entity_id;
         utilities::Vector position;
         utilities::Vector velocity;
-        utilities::Vector collision_velocity;
-        utilities::Vector acceleration;
+        CLIENT_ONLY(utilities::Vector lerp_position;)
+        SERVER_ONLY(utilities::Vector collision_velocity;)
+        SERVER_ONLY(utilities::Vector acceleration;)
         float angle;
         float radius;
-        float friction;
-        float mass;
+        SERVER_ONLY(float friction;)
+        SERVER_ONLY(float mass;)
         Physical() {}
         void Init(EntityIdx entity) { *this = {}; entity_id = entity; }
         void Free() {}

@@ -4,7 +4,17 @@
 #include <cstddef>
 
 namespace binary {
+    struct Clientbound {
+        enum {
+            update,
+        };
+    };
 
+    struct Serverbound {
+        enum {
+            spawn,
+        };
+    };
     class Protocol {
         uint8_t *start;
         uint8_t *at;
@@ -17,7 +27,7 @@ namespace binary {
             start = at = p;
             end = e;
         }
-
+        uint32_t Size() { return at - start; }
         uint8_t ReadUint8() {
             if (start != end && at == end)
                 return 0;

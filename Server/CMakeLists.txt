@@ -4,10 +4,12 @@ project(gardn-server)
 include_directories(..)
 
 set(SOURCES
+    System/Physics.cc
     System/Velocity.cc
     Main.cc
     Server.cc
     Simulation.cc
+    SpatialHash.cc
     ../Shared/Simulation.cc
     ../Shared/Utilities.cc
 )

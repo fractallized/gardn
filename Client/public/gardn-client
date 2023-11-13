@@ -1214,29 +1214,31 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  1372: () => { Module.canvas = document.createElement("canvas"); Module.canvas.id = "canvas"; Module.canvas.oncontextmenu = function() { return false; }; window.onbeforeunload = function(e) { return "Are you sure?"; }; document.body.appendChild(Module.canvas); Module.ctxs = [Module.canvas.getContext('2d')]; Module.availableCtxs = new Array(256).fill(0).map(function(_, i) { return i; }); Module.addCtx = function() { if (Module.availableCtxs.length) { const index = Module.availableCtxs.shift(); if (index == 0) return 0; const ocanvas = new OffscreenCanvas(1, 1); Module.ctxs[index] = ocanvas.getContext('2d'); return index; } throw new Error( 'Out of Contexts: Can be fixed by allowing more contexts'); return -1; }; Module.removeCtx = function(index) { if (index == 0) throw new Error('Tried to delete the main context'); Module.ctxs[index] = null; Module.availableCtxs.push(index); }; },  
- 2252: () => { window.onkeydown = function(e) { }; window.onkeyup = function(e) { }; window.addEventListener("mousedown", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mousemove", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mouseup", async function(e){ const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("touchstart", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchmove", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchend", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("wheel", async function({deltaY}) { }); document.body.addEventListener("paste", async function(e) { const buf = new TextEncoder().encode(e.clipboardData.getData("text/plain")); const $a = _malloc(buf.length + 1); HEAPU8.set(buf, $a); HEAPU8[$a + buf.length] = 0; }); function loop(time) { if (window.start == null) window.start = time + 1; const delta = Math.min(0.5, (time - window.start) / 1000); window.start = time; _render(Module.canvas.width = innerWidth * devicePixelRatio, Module.canvas.height = innerHeight * devicePixelRatio, delta); requestAnimationFrame(loop); }; requestAnimationFrame(loop); },  
- 4035: () => { return Module.addCtx(); },  
- 4063: ($0, $1, $2) => { const canvas = Module.ctxs[$0].canvas; canvas.width = $1; canvas.height = $2; },  
- 4145: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillStyle = "rgba("+$1+","+$2+","+$3+","+$4+")"; },  
- 4214: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].strokeStyle = "rgba("+$1+","+$2+","+$3+","+$4+")"; },  
- 4285: ($0, $1) => { Module.ctxs[$0].lineWidth = $1; },  
- 4321: ($0, $1) => { Module.ctxs[$0].font = $1 + "px Ubuntu"; },  
- 4366: ($0, $1) => { Module.ctxs[$0].lineJoin = $1 === -1 ? "miter" : $1 === 0 ? "round" : "bevel"; },  
- 4449: ($0, $1) => { Module.ctxs[$0].lineCap = $1 === -1 ? "butt" : $1 === 0 ? "round" : "square"; },  
- 4531: ($0, $1) => { Module.ctxs[$0].textAlign = $1 === -1 ? "left" : $1 === 0 ? "center" : "right"; },  
- 4615: ($0, $1) => { Module.ctxs[$0].textAlign = $1 === -1 ? "top" : $1 === 0 ? "middle" : "bottom"; },  
- 4699: ($0) => { Module.ctxs[$0].beginPath(); },  
- 4732: ($0, $1, $2) => { Module.ctxs[$0].moveTo($1, $2); },  
- 4768: ($0, $1, $2) => { Module.ctxs[$0].lineTo($1, $2); },  
- 4804: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].quadraticCurveTo($1, $2, $3, $4); },  
- 4858: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].bezierCurveTo($1, $2, $3, $4, $5, $6); },  
- 4917: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].arc($1, $2, $3, $4, $5, !!$6); },  
- 4968: ($0) => { Module.ctxs[$0].fill(); },  
- 4996: ($0) => { Module.ctxs[$0].stroke(); },  
- 5026: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].clearRect($1, $2, $3, $4); },  
- 5073: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillRect($1, $2, $3, $4); },  
- 5119: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].setTransform($1, $2, $4, $5, $3, $6); }
+  1932: () => { Module.canvas = document.createElement("canvas"); Module.canvas.id = "canvas"; Module.canvas.oncontextmenu = function() { return false; }; window.onbeforeunload = function(e) { return "Are you sure?"; }; document.body.appendChild(Module.canvas); Module.ctxs = [Module.canvas.getContext('2d')]; Module.availableCtxs = new Array(256).fill(0).map(function(_, i) { return i; }); Module.addCtx = function() { if (Module.availableCtxs.length) { const index = Module.availableCtxs.shift(); if (index == 0) return 0; const ocanvas = new OffscreenCanvas(1, 1); Module.ctxs[index] = ocanvas.getContext('2d'); return index; } throw new Error( 'Out of Contexts: Can be fixed by allowing more contexts'); return -1; }; Module.removeCtx = function(index) { if (index == 0) throw new Error('Tried to delete the main context'); Module.ctxs[index] = null; Module.availableCtxs.push(index); }; },  
+ 2812: () => { window.onkeydown = function(e) { }; window.onkeyup = function(e) { }; window.addEventListener("mousedown", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mousemove", async function(e) { const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("mouseup", async function(e){ const clientX = e.clientX; const clientY = e.clientY; const button = e.button; }); window.addEventListener("touchstart", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchmove", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("touchend", function(e){ e.preventDefault(); e.stopPropagation(); if (!e.changedTouches.length) return; const touch = e.changedTouches[0]; for (const t of e.changedTouches); }, {passive: false}); window.addEventListener("wheel", async function({deltaY}) { }); document.body.addEventListener("paste", async function(e) { const buf = new TextEncoder().encode(e.clipboardData.getData("text/plain")); const $a = _malloc(buf.length + 1); HEAPU8.set(buf, $a); HEAPU8[$a + buf.length] = 0; }); function loop(time) { if (window.start == null) window.start = time + 1; const delta = Math.min(0.5, (time - window.start) / 1000); window.start = time; _render(Module.canvas.width = innerWidth * devicePixelRatio, Module.canvas.height = innerHeight * devicePixelRatio, delta); requestAnimationFrame(loop); }; requestAnimationFrame(loop); },  
+ 4595: () => { return Module.addCtx(); },  
+ 4623: ($0, $1, $2) => { const canvas = Module.ctxs[$0].canvas; canvas.width = $1; canvas.height = $2; },  
+ 4705: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillStyle = "rgba("+$1+","+$2+","+$3+","+$4+")"; },  
+ 4774: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].strokeStyle = "rgba("+$1+","+$2+","+$3+","+$4+")"; },  
+ 4845: ($0, $1) => { Module.ctxs[$0].lineWidth = $1; },  
+ 4881: ($0, $1) => { Module.ctxs[$0].font = $1 + "px Ubuntu"; },  
+ 4926: ($0, $1) => { Module.ctxs[$0].lineJoin = $1 === -1 ? "miter" : $1 === 0 ? "round" : "bevel"; },  
+ 5009: ($0, $1) => { Module.ctxs[$0].lineCap = $1 === -1 ? "butt" : $1 === 0 ? "round" : "square"; },  
+ 5091: ($0, $1) => { Module.ctxs[$0].textAlign = $1 === -1 ? "left" : $1 === 0 ? "center" : "right"; },  
+ 5175: ($0, $1) => { Module.ctxs[$0].textAlign = $1 === -1 ? "top" : $1 === 0 ? "middle" : "bottom"; },  
+ 5259: ($0) => { Module.ctxs[$0].beginPath(); },  
+ 5292: ($0, $1, $2) => { Module.ctxs[$0].moveTo($1, $2); },  
+ 5328: ($0, $1, $2) => { Module.ctxs[$0].lineTo($1, $2); },  
+ 5364: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].quadraticCurveTo($1, $2, $3, $4); },  
+ 5418: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].bezierCurveTo($1, $2, $3, $4, $5, $6); },  
+ 5477: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].arc($1, $2, $3, $4, $5, !!$6); },  
+ 5528: ($0) => { Module.ctxs[$0].fill(); },  
+ 5556: ($0) => { Module.ctxs[$0].stroke(); },  
+ 5586: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].clearRect($1, $2, $3, $4); },  
+ 5633: ($0, $1, $2, $3, $4) => { Module.ctxs[$0].fillRect($1, $2, $3, $4); },  
+ 5679: ($0, $1, $2, $3, $4, $5, $6) => { Module.ctxs[$0].setTransform($1, $2, $4, $5, $3, $6); },  
+ 5737: ($0, $1) => { let socket = Module.socket = new WebSocket(UTF8ToString($0)); socket.binaryType = "arraybuffer"; socket.onopen = function() { _socket_event(0, 0); }; socket.onmessage = function(event) { const b = new Uint8Array(event.data); HEAPU8.set(b, $1); _socket_event(1, b.length); }; socket.onclose = function(a) { _socket_event(2, a.code); }; },  
+ 6076: ($0, $1) => { Module.socket.send(HEAPU8.subarray($0, $0 + $1)); }
 };
 
 
@@ -1469,6 +1471,9 @@ var _render = Module["_render"] = createExportWrapper("render");
 
 /** @type {function(...*):?} */
 var _main = Module["_main"] = createExportWrapper("main");
+
+/** @type {function(...*):?} */
+var _socket_event = Module["_socket_event"] = createExportWrapper("socket_event");
 
 /** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");

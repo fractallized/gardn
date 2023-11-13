@@ -1,4 +1,4 @@
-#include <Renderer.hh>
+#include <Client/Renderer.hh>
 
 #include <cmath>
 #include <emscripten.h>

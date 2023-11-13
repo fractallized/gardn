@@ -20,6 +20,10 @@ void utilities::HexDump(char const *start, uint64_t size) {
     puts("");
 }
 
+float utilities::FClamp(float v, float min, float max) {
+    return v < min ? min : v > max ? max : v;
+}
+
 uint64_t utilities::GetTime() {
     return std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::high_resolution_clock::now().time_since_epoch()).count();
 }
@@ -32,10 +36,10 @@ Vector::Vector(float _x, float _y) {
     x = _x; y = _y;
 }
 
-Vector *Vector::operator=(Vector *v) {
-    x = v->x;
-    y = v->y;
-    return this;
+
+Vector &Vector::operator=(float v) {
+    x = y = v;
+    return *this;
 }
 
 Vector &Vector::operator+=(Vector &v) {

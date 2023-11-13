@@ -9,7 +9,6 @@ static void ForEach(Simulation *simulation, EntityIdx entity, void *captures) {
     physical->velocity *= physical->friction;
     physical->velocity += physical->acceleration;
     physical->position += physical->velocity;
-    printf("%d %.1f %.1f\n", entity, physical->position.x, physical->position.y);
 }
 
 void system::Velocity(Simulation *simulation) {

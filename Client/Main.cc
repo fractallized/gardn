@@ -2,10 +2,9 @@
 
 #include <emscripten.h>
 
-#include <Game.hh>
+#include <Client/Game.hh>
 
-extern "C"
-{
+extern "C" {
     void render(float width, float height, float delta) {
         gardn::renderer.width = width;
         gardn::renderer.height = height;
